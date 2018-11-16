@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="pyro"/>
+  
+  <remote fetch="git://git.yoctoproject.org"  name="yocto"/>    
+  <remote fetch="https://github.com/openembedded"  name="oe"/>
+  <remote fetch="git://github.com/meta-qt5"        name="QT5"/>
+  <remote fetch="git://github.com/jumpnow" name="jumpnow"/>
+
+  <project remote="yocto"     upstream="sumo" name="poky" path="sources/poky"/>
+  <project remote="yocto"     upstream="sumo" name="meta-security" path="sources/meta-security"/>
+  <project remote="yocto"     upstream="sumo" name="meta-raspberrypi" path="sources/meta-rasbperrypi"/>
+  <project remote="oe"        upstream="sumo" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="QT5"       upstream="sumo" name="meta-qt5" path="sources/meta-qt5"/>
+  <project remote="jumpnow"   upstream="sumo" name="meta-rpi" path="sources/meta-rpi"/>
+
+</manifest>
