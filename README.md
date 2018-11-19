@@ -4,10 +4,10 @@ Simplifies fetching repos for building yocto distros for rpi
 * Use Ubuntu version less than 18.04. Doesn't work on 18.10
 
 To get all sources run
-'''
+```
 repo init -u https://github.com/lighht/rpi-bsp-platform
 repo sync -j4
-'''
+```
 
 sudo apt install gawk wget git-core diffstat unzip texinfo gcc-multilib \
 build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
