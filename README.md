@@ -1,7 +1,8 @@
 # rpi-bsp-platform
-Simplifies fetching repos for building yocto distros for rpi
+Simplifies fetching repos for building yocto distros for rpi. The instructions were compiled from instructions that can be found in 
+https://jumpnowtek.com/rpi/Raspberry-Pi-Systems-with-Yocto.html
 
-* Use Ubuntu version less than 18.04. Doesn't work on 18.10
+*Use Ubuntu version less than 18.04. Doesn't work on 18.10*
 
 To get all sources run
 ```
@@ -19,4 +20,11 @@ sed cvs subversion coreutils texi2html docbook-utils python-pysqlite2 \
 help2man make gcc g++ desktop-file-utils libgl1-mesa-dev libglu1-mesa-dev \
 mercurial automake groff curl lzop asciidoc u-boot-tools dos2unix mtd-utils pv \
 libncurses5 libncurses5-dev libncursesw5-dev libelf-dev zlib1g-dev
+```
+
+After setting up run the following commands to flash image to sd card
+```
+export MACHINE=raspberrypi3 OETMP="rpi/build-rpi/tmp/"; 
+ ./sources/meta-rpi/scripts/copy_boot.sh sda
+./sources/meta-rpi/scripts/copy_rootfs.sh sda qt5
 ```
