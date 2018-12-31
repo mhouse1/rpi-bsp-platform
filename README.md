@@ -32,6 +32,8 @@ The above command will setup the environment variables and put you inside a dire
 
 Copy the files scripts/conf/local.conf and scripts/conf/bblayers.conf fomr this directory to build/conf/
 
+If you want to customize the splash screen, you need to edit the psplash_git.bb recipe found in sources/poky/meta/recipes-core/psplash and add a patch to edit color. The edited files are found in the psplash directory of this repo. Do a git diff to see the changes. Also add a psplash-poky-img.png of whatever splash image you want to see.  
+
 Now you can start building the images and sdk.
 
 Run 
