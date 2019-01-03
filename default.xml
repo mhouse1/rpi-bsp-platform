@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="sumo"/>
+  <default sync-j="4" revision="thud"/>
   
   <remote fetch="git://git.yoctoproject.org"  name="yocto"/>    
   <remote fetch="https://github.com/openembedded"  name="oe"/>
   <remote fetch="git://github.com/meta-qt5"        name="QT5"/>
   <remote fetch="git://github.com/jumpnow" name="jumpnow"/>
 
-  <project remote="yocto"   revision= "d240b885f26e9b05c8db0364ab2ace9796709aad" upstream="sumo" name="poky" path="sources/poky"/>
-  <project remote="yocto"   revision= "1e4b45ca888188b4eb838cb29b501ee004237552" upstream="sumo" name="meta-security" path="sources/meta-security"/>
-  <project remote="yocto"   revision= "2d40b000021bc8a9ef7f329ed0ad410f8d227b97" upstream="sumo" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
-  <project remote="oe"      revision= "2bb21ef27c4b0c9d52d30b3b2c5a0160fd02b966" upstream="sumo" name="meta-openembedded" path="sources/meta-openembedded"/>
-  <project remote="QT5"     revision= "d4e7f73d04e8448d326b6f89908701e304e37d65" upstream="sumo" name="meta-qt5" path="sources/meta-qt5"/>
-  <project remote="jumpnow" revision= "4263215a52bf909c35f1b741e0d281963d3a49c8" upstream="sumo" name="meta-rpi" path="sources/meta-rpi"/>
+  <project remote="yocto"   revision= "87e3a9739d2c28f7fb9d8991586430c2c9bf149c" upstream="thud" name="poky" path="sources/poky"/>
+  <project remote="yocto"   revision= "31dc4e7532fa7a82060e0b50e5eb8d0414aa7e93" upstream="thud" name="meta-security" path="sources/meta-security"/>
+  <project remote="yocto"   revision= "a48743dc36e31170cf737e200cc88f273e13611a" upstream="thud" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
+  <project remote="oe"      revision= "a15d7f6ebcb0ed76c83c28f854d55e3f9d5b3677" upstream="thud" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="QT5"     revision= "201fcf27cf07d60b7d6ab89c7dcefe2190217745" upstream="thud" name="meta-qt5" path="sources/meta-qt5"/>
+  <project remote="jumpnow" revision= "c70245cb06916522bdd42e5dc2d5507d2ec33c1c" upstream="thud" name="meta-rpi" path="sources/meta-rpi"/>
 
 </manifest>
