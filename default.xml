@@ -12,7 +12,7 @@
   <project remote="yocto"   revision= "31dc4e7532fa7a82060e0b50e5eb8d0414aa7e93" upstream="thud" name="meta-security" path="sources/meta-security"/>
   <project remote="yocto"   revision= "a48743dc36e31170cf737e200cc88f273e13611a" upstream="thud" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
   <project remote="oe"      revision= "6094ae18c8a35e5cc9998ac39869390d7f3bb1e2" upstream="thud" name="meta-openembedded" path="sources/meta-openembedded"/>
-  <project remote="QT5"     revision= "d4e7f73d04e8448d326b6f89908701e304e37d65" upstream="sumo" name="meta-qt5" path="sources/meta-qt5"/>
+  <project remote="QT5"     revision= "201fcf27cf07d60b7d6ab89c7dcefe2190217745" upstream="thud" name="meta-qt5" path="sources/meta-qt5"/>
   <project remote="jumpnow" revision= "8847824ed200873d88b6b982a451e888d7e7cd3e" upstream="thud" name="meta-rpi" path="sources/meta-rpi"/>
 
 </manifest>
