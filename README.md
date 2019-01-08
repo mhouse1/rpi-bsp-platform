@@ -38,6 +38,7 @@ Now you can start building the images and sdk.
 
 Run 
 ```
+bitbake qt5-image
 bitbake -c do_populate_sdk qt5-image
 ```
 
