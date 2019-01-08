@@ -2,7 +2,7 @@
 Simplifies fetching repos for building yocto distros for rpi. The instructions were compiled from instructions that can be found in 
 https://jumpnowtek.com/rpi/Raspberry-Pi-Systems-with-Yocto.html
 
-*Use Ubuntu version less than 18.04. Doesn't work on 18.10*
+Tested on Ubuntu 18.04 and 18.10
 
 
 
