@@ -21,7 +21,7 @@ libncurses5 libncurses5-dev libncursesw5-dev libelf-dev zlib1g-dev git repo
 To get all sources run
 ```
 repo init -u https://github.com/lighht/rpi-bsp-platform
-repo sync -j4
+repo sync --current-branch --no-clone-bundle
 ```
 
 Once all the dependencies are built, you need to setup the environment by sourcing the oe-init-build-env file. If your directory structure is different, then you need to apply those changes in build/conf/bblayers.conf file. 
