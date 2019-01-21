@@ -34,15 +34,20 @@ Copy the files scripts/conf/local.conf and scripts/conf/bblayers.conf from this 
 
 If you want to customize the splash screen, you need to edit the psplash_git.bb recipe found in sources/poky/meta/recipes-core/psplash and add a patch to edit color. The edited files are found in the psplash directory of this repo. Do a git diff to see the changes. Also add a psplash-poky-img.png of whatever splash image you want to see.  
 
-Now you can start building the images and sdk.
+Now you can start building the images
 
 Run 
 ```
 bitbake qt5-image
-bitbake -c do_populate_sdk qt5-image
+```
+Before you start building the toolchain, we have to remove qtwebkit. I have not found any elegant way to work. So for now, forcibly
+Delete the line "{USE_RUBY} \" from the file  sources/meta-qt5/recipes-qt/packagegroups/packagegroup-qt5-toolchain-target.bb
+Then, build the toolchain.
+```
+bitbake meta-toolchain-qt5
 ```
 
-Run the SDK installer that is created at build/tmp/deploy/sdk/poky-glibc-x86_64-qt5-image-cortexa7hf-neon-vfpv4-toolchain-2.5.1.sh
+Run the SDK installer that is created at build/tmp/deploy/sdk/poky-glibc-x86_64-meta-toolchain-qt5-cortexa7hf-neon-vfpv4-toolchain-2.5.1.sh
 
 If you have also built the image to install on rpi run the following commands to flash image to sd card
 ```
