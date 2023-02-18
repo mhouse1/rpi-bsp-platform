@@ -3,10 +3,10 @@
 
   <default sync-j="8" revision="thud"/>
   
-  <remote fetch="git://git.yoctoproject.org"  name="yocto"/>    
+  <remote fetch="https://git.yoctoproject.org"  name="yocto"/>    
   <remote fetch="https://github.com/openembedded"  name="oe"/>
-  <remote fetch="git://github.com/meta-qt5"        name="QT5"/>
-  <remote fetch="git://github.com/jumpnow" name="jumpnow"/>
+  <remote fetch="https://github.com/meta-qt5"        name="QT5"/>
+  <remote fetch="https://github.com/jumpnow" name="jumpnow"/>
 
   <project remote="yocto"   revision= "7022689b109a7e2bb52c76a46d76fd3760658ad0" upstream="thud" name="poky" path="sources/poky"/>
   <project remote="yocto"   revision= "31dc4e7532fa7a82060e0b50e5eb8d0414aa7e93" upstream="thud" name="meta-security" path="sources/meta-security"/>
