@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="8" revision="honister"/>
+  <default sync-j="8" revision="dunfell"/>
   
   <remote fetch="https://git.yoctoproject.org"  name="yocto"/>    
   <remote fetch="https://github.com/openembedded"  name="oe"/>
   <remote fetch="https://github.com/meta-qt5"        name="QT5"/>
   <remote fetch="https://github.com/jumpnow" name="jumpnow"/>
 
-  <project remote="yocto"   revision= "honister" upstream="honister" name="poky" path="sources/poky"/>
-  <project remote="yocto"   revision= "honister" upstream="honister" name="meta-security" path="sources/meta-security"/>
-  <project remote="yocto"   revision= "honister" upstream="honister" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
-  <project remote="oe"      revision= "honister" upstream="honister" name="meta-openembedded" path="sources/meta-openembedded"/>
-  <project remote="QT5"     revision= "honister" upstream="honister" name="meta-qt5" path="sources/meta-qt5"/>
-  <project remote="jumpnow" revision= "honister" upstream="honister" name="meta-rpi" path="sources/meta-rpi"/>
+  <project remote="yocto"   revision= "dunfell" upstream="dunfell" name="poky" path="sources/poky"/>
+  <project remote="yocto"   revision= "dunfell" upstream="dunfell" name="meta-security" path="sources/meta-security"/>
+  <project remote="yocto"   revision= "dunfell" upstream="dunfell" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
+  <project remote="oe"      revision= "dunfell" upstream="dunfell" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="QT5"     revision= "dunfell" upstream="dunfell" name="meta-qt5" path="sources/meta-qt5"/>
+  <project remote="jumpnow" revision= "dunfell" upstream="dunfell" name="meta-rpi" path="sources/meta-rpi64"/>
 
 </manifest>
